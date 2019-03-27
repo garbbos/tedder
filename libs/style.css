@@ -24,6 +24,9 @@ button:hover{
 a.visited{
     color: rgb(165, 108, 1);
 }
+.boton{
+    font-size: 2em;
+}
 button{
     background: rgba(246, 153, 39, 1);
     border: none;
