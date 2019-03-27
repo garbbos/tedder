@@ -1,0 +1,120 @@
+body{
+    background: rgb(255,255,255);
+    color: #222;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+a.menu{
+    background: auto;
+    color: rgb(95, 64, 6);
+    font-weight: bolder;
+    outline: none;
+    padding: 0 .5em;
+}
+button:hover{
+    background: rgba(246, 153, 39, 1);
+}
+a.visited{
+    color: rgb(165, 108, 1);
+}
+button{
+    background: rgba(246, 153, 39, 1);
+    border: none;
+    color: #222;
+    height: 30px;
+    width: 38px;
+}
+.circulo{
+    background: rgba(246, 153, 39, 1);
+    border-style:solid;
+    border-width:2px;  
+    border-color:rgba(22, 22, 22, 0.6);
+    border-radius: 50%;
+    color: #222;
+    display: inline-block;
+    height: 120px;
+    margin: 2em;
+    width: 120px;
+}
+.circulos{
+    margin: 2em;
+    text-align: center;
+}
+.fondo{
+    background-color: rgb(2, 2, 2);
+    background-color: rgba(2, 2, 2, .4);
+    color: inherit;
+    height:100%;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transition: all .3s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+}
+footer{
+    bottom: 0;
+    font-size: .9em;
+    position: fixed;
+    right: 1%;
+    text-align: right;
+}
+
+footer>p{
+    padding-right: .8em;
+}
+h1{
+    font-size: 1.4em;
+    flex: 3 1 auto;
+}
+.iconnect{
+    flex: 1 1 auto;
+    padding: 1em 0 0 1em;
+}
+.inew{
+    flex: 0 1 auto;
+    padding: 1em 1em 0 1em;
+}
+nav{
+    background: rgba(246, 153, 39, 1);
+    color: #222;
+    display: flex;
+    padding: .6em 0 0 1em;  
+}
+
+.ssearch{
+    margin: 1em;
+}
+.sombra{
+    box-shadow: 2px 2px 2px #222;
+}
+input{
+    font-size: 1.2em;
+    border-color:rgba(22, 22, 22, 0);
+    border-bottom-style:solid;
+    border-bottom-width:2px;  
+    border-bottom-color:rgba(22, 22, 22, 0.6);
+    padding: .4em;
+}
+input:hover{
+    border-style:solid;
+    border-width:2px;  
+    border-color:rgba(22, 22, 22, 0.6);
+}
+input:focus{
+    border-style:solid;
+    border-width:2px;  
+    border-color:rgba(22, 22, 22, 0.6);
+}
+svg{
+    cursor: pointer;
+}
