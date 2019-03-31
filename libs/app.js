@@ -1,11 +1,11 @@
 window.onload = function () {
     'use strict';
     //variables
-    var msg = libro.msg;
+    const msg = libro.msg;
+    const open = libro.open;
 
     const fondo = document.querySelector('.fondo');
-    const nuevo = document.querySelector('#bnuevo');
-    const isearch = document.querySelector('#isearch');
+    const search = document.querySelector('#isearch');
 
     fondo.style.display = "block";
 
@@ -20,13 +20,24 @@ window.onload = function () {
     });
 
     window.addEventListener('keyup', (e) => {
+        fondo.style.visibility = "hidden";
         if (e.keyCode == 27) {
-            fondo.style.visibility = "hidden";
-            msg("Esc presionado");  
+            msg("Esc Key...");  
+        }
+        if (e.keyCode == 13) {
+            open(search.value);
+            msg("Return Key...");  
+            search.value = '';
         }
     });
 
     window.addEventListener('click', (e) => {
-        isearch.value = ""
+        
+        msg(e.target.id);
+        switch(e.target.id) {
+            case "options":
+            msg("options click...");
+            break;
+        }
     });
 }
