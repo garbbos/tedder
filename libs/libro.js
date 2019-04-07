@@ -2,8 +2,9 @@ var libro = (function() {
     'use strict';
 
     const puntos = document.querySelector('#puntos');
+    const setup = document.querySelector('#setup');
     var titulo = document.querySelector('#titulo');
-    var titulos = [];
+    var titulo_texto = [];
 
     var lib = {};
 
@@ -16,12 +17,14 @@ var libro = (function() {
     lib.open = function(_valor) {
         if (_valor.length > 0) {
             lib.msg("Open function... " + _valor);
-            titulos[0] = "&nbsp;";
-            titulos.push(_valor);
-            titulo.innerHTML = titulos.join(' &rang; ');
+            titulo.innerHTML = "&nbsp;" + _valor;
         }
         
+    }
 
+    lib.menu = function(){
+        lib.msg("Menu function... ");
+        setup.focus();
     }
 
     return lib;
